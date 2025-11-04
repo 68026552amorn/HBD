@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💖 Happy Birthday Surprise 🎂</title>
+    <link rel="stylesheet" href="style.css"> 
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js" async></script>
+</head>
+<body>
+    
+    <div class="decor-balloon-bottom-left"></div>
+    <div class="decor-gift-top-right"></div>
+    <div class="decor-balloon-mid-right"></div>
+    <div class="decor-gift-mid-left"></div>
+    
+    <div class="decor-twinkle-star-1"></div>
+    <div class="decor-twinkle-star-2"></div>
+    <div class="decor-twinkle-star-3"></div>
+    <div id="app" class="container">
+        <div id="login-view" class="login-view">
+            <h1 class="bounce-text">🎂 หมูอ้วน ใส่วันเกิดดูสิ 🎁</h1>
+            <p style="color: #666; font-size: 1.1em;">คุณต้องใส่วันเกิดที่ถูกต้อง (วัน-เดือน-ปี) เพื่อเข้าสู่หน้าเซอร์ไพรส์</p>
+            
+            <input type="text" id="birthdayInput" placeholder="06-11-2006" required>
+            <button onclick="checkBirthday()">ไปกันเลย</button>
+            
+            <p id="message" class="error-text"></p>
+        </div>
+            
+        <div id="main-view" class="main-view" style="display:none;">
+            
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+
+            <h1 class="main-header animated-pop">💖 Happy Birthday!นะสุดที่รัก ขอบคุณที่เกิดมาในโลกใบนี้ ขอให้มีความสุขมากๆ และเป็นเด็กดีต่อไปนะคั้บ รักอ้วนมากๆนะ🥳</h1>
+            <p class="wish-text animated-fade">ขอให้เป็นวันที่เต็มไปด้วยความสุขและรอยยิ้ม!</p>
+
+            <div class="scrolling-images-container">
+                <div id="image-track" class="image-track">
+                    </div>
+            </div>
+            
+            <div class="decor-text-bottom animated-fade">
+                <p>รักนะจุ๊บๆ จากคนทำเซอร์ไพรส์ 😉</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
